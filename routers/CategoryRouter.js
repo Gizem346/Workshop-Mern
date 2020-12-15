@@ -9,7 +9,9 @@ router.get('/getCategory/:id', CategoryController.getCategory);
 
 router.post('/updateCategory', validations.categoryValidation,CategoryController.updateCategory);
 
-router.get('/deleteCategory/:id', CategoryController.deleteCategory);
+router.get('/deleteCategory/:id', CategoryController.deleteCategory); //sözde sildik
+
+router.get('/destroyCategory/:id', CategoryController.destroyCategory); //tamamen sildik
 
 router.get('/', CategoryController.getCategories);
 
